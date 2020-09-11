@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
     _keyboard = MediaQuery.of(context).viewInsets.bottom;
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.red,
         body: SafeArea(
           child: Column(
             children: [
