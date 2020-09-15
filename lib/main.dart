@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'Resturants.dart';
+import 'grocery.dart';
+
 void main() {
   runApp(MaterialApp(
     home: HomePage(),
@@ -19,18 +22,36 @@ class HomePage extends StatelessWidget {
     _keyboard = MediaQuery.of(context).viewInsets.bottom;
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
             children: [
-              Center(
-                child: Text(
-                  'Maintenance',
+              AppBar(
+                elevation: 0,
+                backgroundColor: Colors.white,
+                title: new Text(
+                  "NOGOZO",
                   style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25.0),
+                      color: Colors.black,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold),
                 ),
+                actions: [
+                  IconButton(
+                    icon: Icon(
+                      Icons.search,
+                      color: Colors.black,
+                    ),
+                    onPressed: () {},
+                  ),
+                  IconButton(
+                    icon: Icon(
+                      Icons.shopping_cart,
+                      color: Colors.black,
+                    ),
+                    onPressed: () {},
+                  )
+                ],
               ),
               Container(
                 height: _height * 0.15,
@@ -51,7 +72,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               Container(
-                height: _height * 0.80,
+                height: _height * 0.75,
                 width: _width * 0.85,
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -69,12 +90,16 @@ class HomePage extends StatelessWidget {
                             children: [
                               Material(
                                 child: InkWell(
-                                  highlightColor: Colors.black,
-                                  onTap: () {},
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => Grocery()));
+                                  },
                                   child: Center(
                                     child: new Image.asset(
-                                      "images/electrician.png",
-                                      scale: 4,
+                                      "images/gro.webp",
+                                      scale: 7,
                                     ),
                                   ),
                                 ),
@@ -83,7 +108,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Electrician',
+                          'Grocery',
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -95,18 +120,23 @@ class HomePage extends StatelessWidget {
                     Column(
                       children: [
                         Container(
-                          margin: new EdgeInsets.all(25),
+                          margin: new EdgeInsets.all(12),
                           color: Colors.white,
                           child: Stack(
                             children: [
                               Material(
                                 child: InkWell(
-                                  highlightColor: Colors.black,
-                                  onTap: () {},
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                Resturants()));
+                                  },
                                   child: Center(
                                     child: new Image.asset(
-                                      "images/sweep.jpg",
-                                      scale: 12.8,
+                                      "images/food.png",
+                                      scale: 2,
                                     ),
                                   ),
                                 ),
@@ -115,7 +145,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Cleaner',
+                          'Resturant',
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -127,7 +157,7 @@ class HomePage extends StatelessWidget {
                     Column(
                       children: [
                         Container(
-                          margin: new EdgeInsets.all(10),
+                          margin: new EdgeInsets.all(15),
                           color: Colors.white,
                           child: Stack(
                             children: [
@@ -137,12 +167,11 @@ class HomePage extends StatelessWidget {
                                   onTap: () {},
                                   child: Material(
                                     child: InkWell(
-                                      highlightColor: Colors.black,
                                       onTap: () {},
                                       child: Center(
                                         child: new Image.asset(
-                                          "images/plumber.png",
-                                          scale: 2,
+                                          "images/veg.png",
+                                          scale: 5,
                                         ),
                                       ),
                                     ),
@@ -153,7 +182,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Plumber',
+                          'Vegetables',
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -171,11 +200,10 @@ class HomePage extends StatelessWidget {
                             children: [
                               Material(
                                 child: InkWell(
-                                  highlightColor: Colors.black,
                                   onTap: () {},
                                   child: Center(
                                     child: new Image.asset(
-                                      "images/fur.png",
+                                      "images/sta.webp",
                                       scale: 5,
                                     ),
                                   ),
@@ -185,7 +213,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Furniture',
+                          'Sationary',
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -197,18 +225,17 @@ class HomePage extends StatelessWidget {
                     Column(
                       children: [
                         Container(
-                          margin: EdgeInsets.all(10),
+                          margin: EdgeInsets.all(8),
                           color: Colors.white,
                           child: Stack(
                             children: [
                               Material(
                                 child: InkWell(
-                                  highlightColor: Colors.white,
                                   onTap: () {},
                                   child: Center(
                                     child: new Image.asset(
-                                      "images/food.jpg",
-                                      scale: 4,
+                                      "images/tab.jpg",
+                                      scale: 11,
                                     ),
                                   ),
                                 ),
@@ -217,7 +244,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Mess Food',
+                          'Medicines',
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -235,7 +262,6 @@ class HomePage extends StatelessWidget {
                             children: [
                               Material(
                                 child: InkWell(
-                                  highlightColor: Colors.black,
                                   onTap: () {},
                                   child: Material(
                                     child: InkWell(
@@ -243,8 +269,8 @@ class HomePage extends StatelessWidget {
                                       onTap: () {},
                                       child: Center(
                                         child: new Image.asset(
-                                          "images/others.png",
-                                          scale: 4,
+                                          "images/others.jpg",
+                                          scale: 11,
                                         ),
                                       ),
                                     ),

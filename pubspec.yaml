@@ -36,14 +36,18 @@ flutter:
 
   assets:
 
-    - images/electrician.png
-    - images/chair.jpg
-    - images/cleaning.jpg
-    - images/plumber.png
-    - images/food.jpg
-    - images/others.png
-    - images/sweep.jpg
-    - images/fur.png
+    - images/gro.webp
+    - images/food.png
+    - images/veg.png
+    - images/sta.webp
+    - images/tab.jpg
+    - images/others.jpg
+    - images/GRO.jpg
+    - images/domino.jpg
+    - images/kfc.jpg
+    - images/mojo.jpg
+    - images/haldirams.jpg
+
 
   fonts:
     - family: Shojumaru
