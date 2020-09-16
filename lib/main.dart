@@ -42,7 +42,12 @@ class HomePage extends StatelessWidget {
                       Icons.search,
                       color: Colors.black,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => new SearchPage()));
+                    },
                   ),
                   IconButton(
                     icon: Icon(

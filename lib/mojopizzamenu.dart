@@ -23,7 +23,7 @@ class Mojopizzamenu extends StatelessWidget {
                   onTap: () {},
                   child: Center(
                       child: Text(
-                    "Pepperoni Pizza",
+                    "Delux Veggie Pizza",
                     style: TextStyle(fontSize: 20),
                   )),
                 ),
@@ -44,7 +44,7 @@ class Mojopizzamenu extends StatelessWidget {
                 onTap: () {},
                 child: Center(
                     child: Text(
-                  "Margherita Pizza",
+                  "Peppy Paneer Pizza",
                   style: TextStyle(fontSize: 20),
                 )),
               ),
@@ -64,7 +64,7 @@ class Mojopizzamenu extends StatelessWidget {
                 onTap: () {},
                 child: Center(
                     child: Text(
-                  "Macroccan Spice Pasta Pizza",
+                  "Pasta Pizza",
                   style: TextStyle(fontSize: 20),
                 )),
               ),
@@ -84,7 +84,7 @@ class Mojopizzamenu extends StatelessWidget {
                 onTap: () {},
                 child: Center(
                     child: Text(
-                  "Creamy Tomato Pasta Pizza",
+                  "Zesty Chicken Pizza",
                   style: TextStyle(fontSize: 20),
                 )),
               ),
