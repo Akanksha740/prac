@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:nogozo/search.dart';
 
 import 'Resturants.dart';
 import 'grocery.dart';
@@ -46,7 +47,7 @@ class HomePage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => new SearchPage()));
+                              builder: (context) => SearchPage()));
                     },
                   ),
                   IconButton(

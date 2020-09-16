@@ -23,7 +23,7 @@ class Mojopizzamenu extends StatelessWidget {
                   onTap: () {},
                   child: Center(
                       child: Text(
-                    "Delux Veggie Pizza",
+                    "Deluxe Veggie Pizza",
                     style: TextStyle(fontSize: 20),
                   )),
                 ),
